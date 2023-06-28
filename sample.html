@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .image-container {
+        position: relative;
+      }
+
+      .background-image {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 10%;
+        width: 20%;
+        height: auto;
+      }
+
+      .overlay-image {
+        position: absolute;
+        top: 130px;
+        left: 28%;
+        width: 25%;
+        height: auto;
+      }
+      .overlay-image-2 {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        width: 45%;
+        height: auto;
+      }
+      .custom-margin {
+        margin-top: 37%;
+      }
+      .custom-background {
+      background-color: lightgray;
+      height: 100vh;
+      }
+      .overlay-text{
+        
+        font-size: x-large;
+        font-weight: bold;
+        position: absolute; 
+        top:5%; 
+        left: 75%; 
+        width: 25%; 
+        height: 7%; 
+        background-color: #E0CA9E;
+      }
+      @media (max-width: 576px){
+        .mobile-image{
+          margin-top: 450px;
+          margin-left: 45%;
+          margin-right: 5px;
+          width: 200px;
+        }
+        .mobile-image-1{
+          margin-top: 0px;
+          margin-left: -23%;
+          margin-right: 5px;
+          width: 270px;
+        }
+        .mobile-image-2{
+          margin-top: 100px;
+          margin-left: -25%;
+          margin-right: 5px;
+          width: 200px;
+        }
+        .custom-margin{
+          margin-top: 350px;
+        }
+        .custom-background {
+        background-color: lightgray;
+        height: 1500px;
+        }
+        .custom-background img{
+          width: 300px;
+        }
+        .overlay-text{
+          font-size: small;
+          width: 30%; 
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="background-image: url('./img/Rectangle\ 2.png'); height: 100vh; background-repeat: no-repeat; background-size: cover;">
+    
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-end" id="">
+            <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                  <span class="nav-link active" aria-current="page">|</span>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Join Us</a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link active" aria-current="page">|</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+              </li>
+              
+            </ul>
+            
+            
+          </div>
+          
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtIZ5enkoT28OnDUfXi6zQxABO5VkQNzVMw&usqp=CAU" 
+                class="rounded-circle shadow-4-strong ms-sm-0 ms-md-3 ms-sm-5"
+                alt="Dress Logo" 
+                height="40"
+                loading="lazy"/>
+
+            </a>
+            
+            <div class="collapse navbar-collapse justify-content-center ms-md-5" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">NEW ARRIVAL</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">LAST COLLECTION</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">MEN</a>
+                </li>
+                <li class="nav-item me-md-5">
+                  <a class="nav-link active" aria-current="page" href="#">WOMEN</a>
+                </li>
+              </ul>
+              
+              <form class="d-flex align-items-end flex-column" role="search">
+                <div class="input-group">
+                  <button class="rounded-start-pill btn btn-lg" style="background-color: lightgray;"><img src="./node_modules/bootstrap-icons/icons/search.svg" alt=""></button>
+                  <input class="form-control me-2 rounded-end-pill" style="background-color: lightgray;" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                
+              </form>  
+            </div>
+
+
+            <div class="d-flex  justify-content-end">
+              <img src="node_modules/bootstrap-icons/icons/bag.svg" class="me-md-3 me-sm-3 mr-sm-2 mt-sm-2" height="25" alt="">
+              <img src="node_modules/bootstrap-icons/icons/star.svg" class="me-md-4 me-sm-1 mt-sm-2" height="25" alt="">
+            </div>
+
+          </div>
+        </nav>
+
+        <div class="image-container">
+          <img src="./img/3cacf6829646da04f4234b344d4808b8 1.png" alt="Background Image" class="background-image mobile-image">
+          <img src="./img/00c248429c3b8745c82acf8029fc0c28 1.png" alt="Overlay Image 2" class="overlay-image-2 mobile-image-1">
+          <img src="./img/511a72054cd2afa7aa561b3c0c50541a 1.png" alt="Overlay Image" class="overlay-image mobile-image-2">
+        </div>
+
+        <div class="container position-relative custom-margin">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <button class="btn btn-light btn-lg fw-bold rounded-pill">Shop Now</button>
+            </div>
+          </div>
+        </div>
+    
+    </div>
+
+
+    <div class="custom-background text-center">
+      <div class="row d-flex justify-content-around">
+        <div class="col-md-4 col-sm-12 box mt-5">
+          <div class="position-relative">
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" alt="">
+            <a href="#" class="btn btn-lg rounded-pill position-absolute bottom-0 start-50 translate-middle shadow fw-bold" style="background-color: lightgray;">Sweatshirts</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 box mt-5">
+          <div class="position-relative">
+            <img src="./img/511a72054cd2afa7aa561b3c0c50541a 2.png" alt="">
+            <a href="#" class="btn btn-lg rounded-pill position-absolute bottom-0 start-50 translate-middle shadow fw-bold" style="background-color: lightgray;">Hoodies</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 box mt-5">
+          <div class="position-relative">
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" alt="">
+            <a href="#" class="btn btn-lg rounded-pill position-absolute bottom-0 start-50 translate-middle shadow fw-bold" style="background-color: lightgray;">Pair</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex d-none d-md-block align-items-center justify-content-center text-center mt-5 fw-bold fs-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit<br>
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<br>
+        deserunt mollit anim id est laborum.<br>
+      </div>
+
+    <div class="bg-light" style="height: 165vh; margin-top: 150px; margin-bottom: 40px;">
+      <div class="d-flex align-items-center justify-content-around text-danger fw-bold fs-1">
+          <div>SALE</div>
+          <div>SALE</div>
+          <div>SALE</div>
+          <div>SALE</div>
+          <div>SALE</div>
+      </div>
+
+
+      <div class="shadow-lg" style="border-top: 2px solid;"></div>
+
+      
+
+      <div class="container-fluid mt-5 text-center text-light">
+        <div class="row">
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-5 text-center text-light">
+        <div class="row">
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+          <div class="col-md-3 col-6 position-relative">
+            <div class="overlay-text">15% OFF</div>
+            <img src="./img/866885169173291b165b8f0c4e1ca0a1 1.png" class="img-fluid" alt="">
+            <div class="text-dark fw-bold fs-4 text-start ms-3">LOREM IPSUM</div>
+            <div class="text-dark  text-start ms-3">LOREM IPSUM</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-center mt-md-5 ">
+        <button type="button" class="btn btn-lg btn-light shadow rounded-pill ">MORE</button>
+      </div>
+
+    </div>
+
+    <section class="">
+      <footer class="text-dark" style="background-color: lightgray;">
+        <div class=" p-4">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-12">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVtIZ5enkoT28OnDUfXi6zQxABO5VkQNzVMw&usqp=CAU" 
+                  class="rounded-circle shadow-4-strong text-end"
+                  alt="Dress Logo" 
+                  height="150"
+                  loading="lazy"/>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-1"><img src="./node_modules/bootstrap-icons/icons/geo-alt-fill.svg" alt="" style="height: 40px;"></div>
+                    <div class="col-md-11">
+                      <h5 class="text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-1"><img src="./node_modules/bootstrap-icons/icons/phone-fill.svg" alt="" style="height: 40px;"></div>
+                    <div class="col-md-11">
+                      <h5 class="text-secondary">
+                        Lorem ipsum 
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-12">
+                  <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-1"><img src="./node_modules/bootstrap-icons/icons/envelope.svg" alt="" style="height: 40px;"></div>
+                    <div class="col-md-11">
+                      <h5 class="text-secondary">
+                        Lorem ipsum dolor sit amet 
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="row">
+                <div class="col-md-12"><h4>COLLECTION</h4></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+              </div>
+            </div>
+            
+            <div class="col-md-2">
+              <div class="row">
+                <div class="col-md-12"><h4>INFORMATION</h4></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="row">
+                <div class="col-md-12"><h4>MORE</h4></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+                <div class="col-md-12"><h5 class="text-secondary mt-3">Lorem ipsum</h5></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
